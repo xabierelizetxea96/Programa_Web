@@ -7,39 +7,40 @@
     tools:context="elizetxea.xabier.web.Web">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_Go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:text="Button"
         android:layout_marginBottom="13dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:onClick="connect"
+        android:text="Go!"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button"
+        android:layout_alignEnd="@+id/btn_Go"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/button"
+        android:layout_alignRight="@+id/btn_Go"
         android:layout_marginLeft="14dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="13dp"
-        android:text="TextView" />
+        android:layout_above="@+id/URL_Text" />
 
     <EditText
         android:id="@+id/URL_Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
         android:ems="10"
+        android:hint="Type URL"
         android:inputType="textPersonName"
-        android:text="Type URL" />
+        android:layout_alignBottom="@+id/btn_Go"
+        android:layout_alignLeft="@+id/textViewResult"
+        android:layout_alignStart="@+id/textViewResult" />
 </RelativeLayout>
